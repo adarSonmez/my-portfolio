@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Skills() {
+function Footer() {
   return (
     <div>
-      skills
+      footer
     </div>
   )
 }
 
-export default Skills
+export default Footer
