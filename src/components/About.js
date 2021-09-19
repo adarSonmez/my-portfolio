@@ -1,10 +1,11 @@
 import React from 'react'
+import itsMe from '../asserts/images/leon.jpg'
 
 function About() {
   return (
     <section className="about">
       <div className="img-container">
-        <image src="" alt="Adar Sönmez" />
+        <img src={itsMe} alt="Adar Sönmez" />
       </div>
       <h1 className="about-title">About Me</h1>
       <p className="about-content">
