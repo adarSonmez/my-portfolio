@@ -1,27 +1,26 @@
 import React from 'react'
 
 function Header() {
+  const toggleNavBar = (e) => {
+    const nav = e.target.parentNode.parentNode
+    console.log(nav.className)
+    if (nav.className === '') nav.className += ' responsive'
+    else nav.className = ''
+  }
+
   return (
     <header>
       <div className="left-header">My Portfolio</div>
       <nav>
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="#about">About</a>
-          </li>
-          <li className="nav-item">
-            <a href="#skills">Skills</a>
-          </li>
-          <li className="nav-item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="nav-item">
-            <a href="#contact">Contact</a>
-          </li>
-          <li className="drop-down">
-            <i class="bi bi-list"></i>
-          </li>
-        </ul>
+        <div className="mobile-nav" onClick={(e) => toggleNavBar(e)}>
+          <i className="bi bi-list"></i>
+        </div>
+        <div className="nav-menu-container">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
   )
