@@ -45,7 +45,7 @@ nav a,
   float: left;
   display: block;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 nav a:hover {
@@ -142,7 +142,7 @@ nav a:hover {
 .about h2 {
   grid-column: 1/4;
   text-align: center;
-  margin: 6vh auto 4vh;
+  margin: 6vh auto 3vh;
   animation: disco 1s infinite;
 }
 
@@ -164,7 +164,6 @@ nav a:hover {
 }
 
 .about-content p {
-  color: rgb(26, 26, 26);
   padding: 1vh;
   line-height: 20px;
   word-spacing: 3px;
@@ -177,6 +176,55 @@ nav a:hover {
 
 .pink {
   color: rgb(255, 0, 212);
+}
+
+/* Skills section*/
+.skills {
+  display: grid;
+}
+
+.skills h2 {
+  animation: disco 1s infinite;
+  grid-column: 1/4;
+  text-align: center;
+  margin: 6vh auto 4vh;
+}
+
+.skill {
+  font-family: 'Comfortaa', cursive;
+  height: auto;
+  margin: 1.9vh 0.9vh;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  color: rgb(49, 49, 49);
+}
+
+.skill img {
+  max-width: 60px;
+  padding: 0.6vh;
+  display: inline;
+}
+
+.other-tools {
+  grid-column: 1/4;
+}
+
+.other-tools-header {
+  color: rgb(61, 61, 61);
+  margin: 7vh auto 3vh;
+  text-align: center;
+}
+
+.other-tools-logos {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  max-width: 450px;
+  margin: auto;
+}
+
+.other-tools-logos img {
+  width: 60px;
+  margin: auto;
 }
 
 /* Animations */
@@ -204,6 +252,70 @@ nav a:hover {
 @keyframes typing {
   from {
     width: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skills {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .skills h2 {
+    grid-column: 1/3;
+  }
+
+  .other-tools {
+    grid-column: 1/3;
+  }
+
+  .java-skill {
+    grid-column: 1/3;
+    margin: auto;
+    margin-top: 4vh;
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .its-me {
+    grid-column: 1/4;
+  }
+
+  .about-content {
+    grid-column: 1/4;
+  }
+  .skills {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .skills h2 {
+    grid-column: 1/2;
+  }
+
+  .skill {
+    margin: 2vh 4vw 2vh 2vw;
+  }
+
+  .other-tools {
+    grid-column: 1/2;
+  }
+
+  .java-skill {
+    grid-column: 1/2;
+    margin-top: 1.8vh;
+    width: 92%;
+  }
+
+  .other-tools-logos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    max-width: 250px;
+    margin: auto;
+  }
+
+  .other-tools-logos img {
+    width: 60px;
+    margin: 1vh auto;
   }
 }
 
@@ -245,15 +357,5 @@ nav a:hover {
 
   .nav-menu-container {
     margin-top: 4vh;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .its-me {
-    grid-column: 1/4;
-  }
-
-  .about-content {
-    grid-column: 1/4;
   }
 }
