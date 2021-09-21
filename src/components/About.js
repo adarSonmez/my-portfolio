@@ -3,7 +3,7 @@ import itsMe from '../asserts/images/leon.jpg'
 
 function About(props) {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h2>About Me</h2>
       <div className="its-me" data-aos="fade-right">
         <img src={itsMe} alt="Adar Sönmez" />
