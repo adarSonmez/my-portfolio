@@ -45,13 +45,12 @@ nav a,
   float: left;
   display: block;
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.28s;
 }
 
 nav a:hover {
-  font-weight: 700;
   background: #fff;
-  color: rgb(245, 0, 143);
+  color: rgb(204, 0, 119);
 }
 
 .mobile-nav {
@@ -227,6 +226,83 @@ nav a:hover {
   margin: auto;
 }
 
+/* Projects Section */
+.projects {
+  display: grid;
+  max-width: 900px;
+  margin: auto;
+}
+
+.projects h2 {
+  animation: disco 1s infinite;
+  grid-column: 1/4;
+  text-align: center;
+  margin: 8vh auto 4vh;
+}
+
+.project {
+  margin: 6px;
+  height: 270px;
+  color: rgb(24, 24, 24);
+  transition: all 1s;
+  position: relative;
+  cursor: pointer;
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-info {
+  padding-top: 19px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  transition: all .5s;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.678);
+  border: 0px solid white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.project-info:hover {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.project-name {
+}
+
+.project-description {
+  margin-top: 20%;
+  margin-bottom: 20px;
+
+}
+
+.project-info button {
+  display: block;
+  width: 140px;
+  height: 35px;
+  margin: 5px auto;
+  border-radius: 0;
+  border: none;
+  transition: all .3s;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(0, 162, 255);
+
+}
+
+.project-info button:hover {
+  background-color: #fff;
+  border: 2px solid rgb(0, 183, 255);
+  color: rgb(0, 84, 105);
+}
+
 /* Animations */
 @keyframes disco {
   0% {
@@ -317,6 +393,10 @@ nav a:hover {
     width: 60px;
     margin: 1vh auto;
   }
+
+  .projects h2 {
+    grid-column: 1/3;
+  }
 }
 
 /* Responsive design */
@@ -357,5 +437,11 @@ nav a:hover {
 
   .nav-menu-container {
     margin-top: 4vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .projects h2 {
+    grid-column: 1/2;
   }
 }

@@ -1,19 +1,19 @@
 import React from 'react'
-import htmlLogo from '../asserts/images/html-logo.png'
-import cssLogo from '../asserts/images/css-logo.png'
-import jsLogo from '../asserts/images/js-logo.png'
-import bootstrapLogo from '../asserts/images/bootstrap-logo.png'
-import gitLogo from '../asserts/images/git-logo.png'
-import gitHubLogo from '../asserts/images/github-logo.png'
-import javaLogo from '../asserts/images/java-logo.png'
-import jqueryLogo from '../asserts/images/jquery-logo.png'
-import mongoDBLogo from '../asserts/images/mongodb-logo.png'
-import npmLogo from '../asserts/images/npm-logo.png'
-import nodeJSLogo from '../asserts/images/nodejs-logo.png'
-import postmanLogo from '../asserts/images/postman-logo.png'
-import reactLogo from '../asserts/images/react-logo.png'
-import sassLogo from '../asserts/images/sass-logo.png'
-import yarnLogo from '../asserts/images/yarn-logo.png'
+import htmlLogo from '../asserts/images/logos/html-logo.png'
+import cssLogo from '../asserts/images/logos/css-logo.png'
+import jsLogo from '../asserts/images/logos/js-logo.png'
+import bootstrapLogo from '../asserts/images/logos/bootstrap-logo.png'
+import gitLogo from '../asserts/images/logos/git-logo.png'
+import gitHubLogo from '../asserts/images/logos/github-logo.png'
+import javaLogo from '../asserts/images/logos/java-logo.png'
+import jqueryLogo from '../asserts/images/logos/jquery-logo.png'
+import mongoDBLogo from '../asserts/images/logos/mongodb-logo.png'
+import npmLogo from '../asserts/images/logos/npm-logo.png'
+import nodeJSLogo from '../asserts/images/logos/nodejs-logo.png'
+import postmanLogo from '../asserts/images/logos/postman-logo.png'
+import reactLogo from '../asserts/images/logos/react-logo.png'
+import sassLogo from '../asserts/images/logos/sass-logo.png'
+import yarnLogo from '../asserts/images/logos/yarn-logo.png'
 
 function Skills() {
   const skills = skillList.map((skill) => {
@@ -37,7 +37,9 @@ function Skills() {
         <h3 className="other-tools-header">
           Some of the other programming tools I'm comfortable with
         </h3>
-        <div className="other-tools-logos">{others}</div>
+        <div className="other-tools-logos" data-aos="zoom-up">
+          {others}
+        </div>
       </div>
     </section>
   )
