@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
-      footer
-    </div>
+    <footer>
+      This site was built with great tools like ReactJS, VS Code, npm.
+    </footer>
   )
 }
 

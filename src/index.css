@@ -261,7 +261,7 @@ nav a:hover {
   width: 100%;
   height: 50px;
   text-align: center;
-  transition: all .5s;
+  transition: all 0.5s;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.678);
   border: 0px solid white;
@@ -275,13 +275,9 @@ nav a:hover {
   height: 100%;
 }
 
-.project-name {
-}
-
 .project-description {
   margin-top: 20%;
   margin-bottom: 20px;
-
 }
 
 .project-info button {
@@ -291,17 +287,86 @@ nav a:hover {
   margin: 5px auto;
   border-radius: 0;
   border: none;
-  transition: all .3s;
+  transition: all 0.3s;
   color: #fff;
   cursor: pointer;
   background-color: rgb(0, 162, 255);
-
 }
 
 .project-info button:hover {
   background-color: #fff;
   border: 2px solid rgb(0, 183, 255);
   color: rgb(0, 84, 105);
+}
+
+/* Contact section */
+.contact {
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact h2 {
+  text-align: center;
+  margin: 7vh auto 4vh;
+  animation: disco 1s infinite;
+}
+
+.contact h4 {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact .icons a {
+  margin-top: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form caption {
+  color: rgb(138, 138, 138);
+  margin-bottom: 9px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  transition: all 0.2s;
+  margin: 10px;
+  padding: 8px 7px;
+  outline-color: rgb(122, 224, 255);
+  border: 2px solid rgb(202, 202, 202);
+}
+
+.contact-form textarea {
+  height: calc(67vh - 240px);
+}
+
+.contact-form button {
+  background: rgb(9, 144, 255);
+  border: 1px solid rgb(194, 194, 194);
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: rgb(235, 16, 255);
+}
+
+.contact-form * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  height: 100px;
+  margin-top: 7vh;
+  background-color: rgb(185, 185, 185);
 }
 
 /* Animations */
