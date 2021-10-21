@@ -11,7 +11,7 @@ import shiningStarsBG from '../asserts/images/projects/shining-stars.png'
 
 function Projects() {
   return (
-    <section className="projects" id="projects" data-aos="fade-up">
+    <section className="projects" id="projects">
       <h2>Some of My Projects</h2>
 
       {projects.map((project) => (
