@@ -331,6 +331,7 @@ nav a:hover {
 .contact-form caption {
   color: rgb(138, 138, 138);
   margin-bottom: 9px;
+  font-style: italic;
 }
 
 .contact-form input,
@@ -344,7 +345,7 @@ nav a:hover {
 }
 
 .contact-form textarea {
-  height: calc(67vh - 240px);
+  height: calc(80vh - 327px);
 }
 
 .contact-form button {
@@ -356,7 +357,7 @@ nav a:hover {
 }
 
 .contact-form button:hover {
-  background-color: rgb(235, 16, 255);
+  background-color: rgb(247, 161, 255);
 }
 
 .contact-form * {
@@ -364,9 +365,35 @@ nav a:hover {
 }
 
 footer {
-  height: 100px;
-  margin-top: 7vh;
-  background-color: rgb(185, 185, 185);
+  height: 107px;
+  margin-top: 3vh;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+footer address {
+  color: rgb(87, 87, 87);
+}
+
+footer .developer {
+  margin-top: 5px;
+}
+
+
+/* Footer section */
+footer .icons {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer .icons a {
+  margin: 10px 3.1%;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Animations */
