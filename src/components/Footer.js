@@ -8,6 +8,10 @@ function Footer() {
 
   return (
     <footer>
+      <p className="contact-message">
+        If you like my work and have some cool project to work on, you can
+        contact me through social sites listed below.
+      </p>
       <div className="icons">
         <a href={myLinkedIn} target="_blank" rel="noreferrer">
           <i className="bi bi-linkedin"></i>
@@ -22,19 +26,16 @@ function Footer() {
           <i className="bi bi-envelope"></i>
         </a>
       </div>
-
       <address>
-        ©{new Date().getFullYear()} ADAR SÖNMEZ. All Rights Reserved.
-        <p className="developer">
-          Developed by{' '}
-          <a
-            href="https://www.linkedin.com/in/adar-sonmez-0011110000110011"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Adar SÖNMEZ
-          </a>
-        </p>
+        ©{new Date().getFullYear()}{' '}
+        <a
+          href="https://www.linkedin.com/in/adar-sonmez-0011110000110011"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Adar SÖNMEZ.
+        </a>{' '}
+        All Rights Reserved.
       </address>
     </footer>
   )

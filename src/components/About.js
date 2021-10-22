@@ -24,15 +24,7 @@ function About(props) {
         </p>
         <p>
           Adar is currently studying Computer Engineering at Eskişehir Technical
-          University. Besides, he is the Avionics Manager of{' '}
-          <a
-            href="https://www.linkedin.com/company/arcturus-rocket-team/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Arcturus Rocket Team.{' '}
-          </a>
-          But his real passion is Web Programming. He has zero years of
+          University. His real passion is Web Programming. He has zero years of
           experience as a web developer in any company.
         </p>
         <p>

@@ -154,7 +154,7 @@ nav a:hover {
 
 .its-me img {
   width: 100%;
-  max-width: 400px;
+  max-width: 340px;
   min-width: 200px;
 }
 
@@ -330,7 +330,7 @@ nav a:hover {
 
 .contact-form caption {
   color: rgb(138, 138, 138);
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   font-style: italic;
 }
 
@@ -338,14 +338,15 @@ nav a:hover {
 .contact-form textarea,
 .contact-form button {
   transition: all 0.2s;
-  margin: 10px;
+  margin: 7px;
   padding: 8px 7px;
   outline-color: rgb(122, 224, 255);
   border: 2px solid rgb(202, 202, 202);
 }
 
 .contact-form textarea {
-  height: calc(80vh - 327px);
+  height: calc(79vh - 320px);
+  min-height: 60px;
 }
 
 .contact-form button {
@@ -365,22 +366,27 @@ nav a:hover {
 }
 
 footer {
-  height: 107px;
-  margin-top: 3vh;
+  height: auto;
+  margin-top: 5vh;
   text-align: center;
   background-color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+footer hr {
+  margin-bottom: 10px;
 }
 
 footer address {
-  color: rgb(87, 87, 87);
+  color: rgb(119, 119, 119);
 }
 
 footer .developer {
   margin-top: 5px;
 }
-
 
 /* Footer section */
 footer .icons {
@@ -390,9 +396,13 @@ footer .icons {
   justify-content: center;
 }
 
+footer .contact-message {
+  color: rgb(102, 102, 102);
+}
+
 footer .icons a {
-  margin: 10px 3.1%;
-  font-size: 24px;
+  margin: 10px 2.9%;
+  font-size: 29px;
   cursor: pointer;
 }
 
