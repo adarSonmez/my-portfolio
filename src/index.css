@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   padding: 0 10vw;
   font-family: 'Gluten', cursive;
