@@ -275,6 +275,11 @@ nav a:hover {
   cursor: pointer;
 }
 
+.bi-arrow-bar-up {
+  position: absolute;
+  top: 4px;
+}
+
 .project-info:hover {
   background-color: rgb(255, 255, 255);
   height: 100%;

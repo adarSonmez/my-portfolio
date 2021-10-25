@@ -8,6 +8,7 @@ function Project(props) {
       data-aos="fade-up"
     >
       <div className="project-info">
+      <i class="bi bi-arrow-bar-up"></i>
         <h3 className="project-name">{props.name}</h3>
         <p className="project-description">{props.des}</p>
         <a href={props.code} target="_blank" rel="noreferrer">
