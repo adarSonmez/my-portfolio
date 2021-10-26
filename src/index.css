@@ -159,17 +159,17 @@ nav a:hover {
 
 .its-me img {
   width: 100%;
-  max-width: 340px;
+  max-width: 320px;
   min-width: 200px;
 }
 
 .about-content {
   font-family: cursive;
-  padding: 2vh;
+  padding: 2vw;
 }
 
 .about-content p {
-  padding: 1vh;
+  padding: 1vh 0;
   line-height: 20px;
   word-spacing: 3px;
   font-family: 'Comfortaa', cursive;
@@ -468,11 +468,14 @@ footer .icons a {
 @media screen and (max-width: 800px) {
   .its-me {
     grid-column: 1/4;
+    padding: 0 4vw;
   }
 
   .about-content {
     grid-column: 1/4;
+    padding: 1vh 4.5vw;    
   }
+  
   .skills {
     grid-template-columns: repeat(1, auto);
   }
