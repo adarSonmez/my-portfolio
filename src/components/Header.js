@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function Header() {
   const toggleNavBar = (e) => {
-    const nav = e.target.parentNode.parentNode
-    console.log(nav.className)
-    if (nav.className === '') nav.className += ' responsive'
-    else nav.className = ''
-  }
+    const nav = e.target.parentNode.parentNode;
+    console.log(nav.className);
+    if (nav.className === '') nav.className += ' responsive';
+    else nav.className = '';
+  };
 
   return (
     <header>
@@ -22,7 +22,7 @@ function Header() {
         </div>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

@@ -1,17 +1,18 @@
-import React from 'react'
-import Header from './Header'
+import React from 'react';
+import Header from './Header';
 
-function Home(props) {
-  const myGithub = 'https://github.com/adarSonmez'
-  const myTwitter = 'https://twitter.com/adarsonm3z'
-  const myLinkedIn = 'https://www.linkedin.com/in/adar-sonmez-0011110000110011/'
-  const myEmail = 'adarsonmez@outlook.com'
+function Home() {
+  const myGithub = 'https://github.com/adarSonmez';
+  const myTwitter = 'https://twitter.com/adarsonm3z';
+  const myLinkedIn =
+    'https://www.linkedin.com/in/adar-sonmez-0011110000110011/';
+  const myEmail = 'adarsonmez@outlook.com';
 
   const whoAreYou = (e) => {
-    e.target.innerText = '2A15J78'
-    e.target.classList.remove('fade')
-    e.target.classList.add('secret')
-  }
+    e.target.innerText = '2A15J78';
+    e.target.classList.remove('fade');
+    e.target.classList.add('secret');
+  };
 
   return (
     <section className="home">
@@ -36,7 +37,7 @@ function Home(props) {
         </a>
       </div>
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Project(props) {
   return (
@@ -8,18 +8,20 @@ function Project(props) {
       data-aos="fade-up"
     >
       <div className="project-info">
-      <i class="bi bi-arrow-bar-up"></i>
+        <i className="bi bi-arrow-bar-up"></i>
         <h3 className="project-name">{props.name}</h3>
         <p className="project-description">{props.des}</p>
-        <a href={props.code} target="_blank" rel="noreferrer">
-          <button className="open-repo">Open Repository </button>
-        </a>
         <a href={props.visit} target="_blank" rel="noreferrer">
           <button className="visit-website">Visit Website</button>
         </a>
+        {props.code ? (
+          <a href={props.code} target="_blank" rel="noreferrer">
+            <button className="open-repo">Open Repository </button>
+          </a>
+        ) : null}
       </div>
     </div>
-  )
+  );
 }
 
-export default Project
+export default Project;

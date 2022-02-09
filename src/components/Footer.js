@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
-  const myGithub = 'https://github.com/adarSonmez'
-  const myTwitter = 'https://twitter.com/adarsonm3z'
-  const myLinkedIn = 'https://www.linkedin.com/in/adar-sonmez-0011110000110011/'
-  const myEmail = 'adarsonmez@outlook.com'
+  const myGithub = 'https://github.com/adarSonmez';
+  const myTwitter = 'https://twitter.com/adarsonm3z';
+  const myLinkedIn = 'https://www.linkedin.com/in/adar-sonmez/';
+  const myEmail = 'adarsonmez@outlook.com';
 
   return (
     <footer>
@@ -38,7 +38,7 @@ function Footer() {
         All Rights Reserved.
       </address>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
