@@ -1,12 +1,6 @@
-import React from 'react';
-
 function Project(props) {
   return (
-    <div
-      className="project"
-      style={{ backgroundImage: `url(${props.bg})` }}
-      data-aos="fade-up"
-    >
+    <div className="project" style={{ backgroundImage: `url(${props.bg})` }}>
       <div className="project-info">
         <i className="bi bi-arrow-bar-up"></i>
         <h3 className="project-name">{props.name}</h3>
@@ -21,7 +15,7 @@ function Project(props) {
         ) : null}
       </div>
     </div>
-  );
+  )
 }
 
-export default Project;
+export default Project

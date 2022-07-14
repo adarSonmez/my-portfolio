@@ -1,19 +1,25 @@
-import React from 'react';
-import { MAIN_SKILLS, OTHER_SHILLS } from '../storage/skills.data';
+import { MAIN_SKILLS, OTHER_SHILLS } from '../storage/skills.data'
 
 function Skills() {
   const skills = MAIN_SKILLS.map((skill) => {
     return (
-      <div key={skill.name} className="skill java-skill" data-aos="fade-up">
+      <div key={skill.name} className="skill java-skill">
         <img src={skill.logo} alt={skill.name} style={skill.styles} />
         <p>{skill.details}</p>
       </div>
-    );
-  });
+    )
+  })
 
   const others = OTHER_SHILLS.map((skill) => {
-    return <img key={skill.name} src={skill.logo} alt={skill.name} style={skill.styles} />;
-  });
+    return (
+      <img
+        key={skill.name}
+        src={skill.logo}
+        alt={skill.name}
+        style={skill.styles}
+      />
+    )
+  })
 
   return (
     <section className="skills" id="skills">
@@ -23,12 +29,10 @@ function Skills() {
         <h3 className="other-tools-header">
           Some of the other programming tools I'm comfortable with
         </h3>
-        <div className="other-tools-logos" data-aos="zoom-up">
-          {others}
-        </div>
+        <div className="other-tools-logos">{others}</div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

@@ -1,14 +1,13 @@
-import React from 'react';
-import itsMe from '../asserts/images/adarsonmez.jpg';
+import itsMe from '../asserts/images/adarsonmez.jpg'
 
 function About() {
   return (
     <section className="about" id="about">
       <h2>About Me</h2>
-      <div className="its-me" data-aos="fade-right">
+      <div className="its-me">
         <img src={itsMe} alt="Adar Sönmez" />
       </div>
-      <div className="about-content" data-aos="fade-left">
+      <div className="about-content">
         <p>
           Adar Sönmez was born in 2000 in the World. His job is to turn complex
           problems into a simple and beautiful designs. He loves programming,
@@ -65,7 +64,7 @@ function About() {
         </p>
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About

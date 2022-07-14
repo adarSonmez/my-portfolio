@@ -1,6 +1,5 @@
-import React from 'react';
-import Project from './Project';
-import PROJECTS_DATA from '../storage/projects.data';
+import Project from './Project'
+import PROJECTS_DATA from '../storage/projects.data'
 
 function Projects() {
   return (
@@ -18,7 +17,7 @@ function Projects() {
         />
       ))}
     </section>
-  );
+  )
 }
 
-export default Projects;
+export default Projects

@@ -1,18 +1,16 @@
-import React from 'react';
-import Header from './Header';
+import Header from "./Header"
 
 function Home() {
-  const myGithub = 'https://github.com/adarSonmez';
-  const myTwitter = 'https://twitter.com/adarsonm3z';
-  const myLinkedIn =
-    'https://www.linkedin.com/in/adar-sonmez-0011110000110011/';
-  const myEmail = 'adarsonmez@outlook.com';
+  const myGithub = 'https://github.com/adarSonmez'
+  const myTwitter = 'https://twitter.com/adarsonm3z'
+  const myLinkedIn = 'https://www.linkedin.com/in/adar-sonmez-0011110000110011/'
+  const myEmail = 'adarsonmez@outlook.com'
 
   const whoAreYou = (e) => {
-    e.target.innerText = '2A15J78';
-    e.target.classList.remove('fade');
-    e.target.classList.add('secret');
-  };
+    e.target.innerText = '2A15J78'
+    e.target.classList.remove('fade')
+    e.target.classList.add('secret')
+  }
 
   return (
     <section className="home">
@@ -22,7 +20,7 @@ function Home() {
       </h2>
       <h2 className="its-great">It's great to see you.❤️</h2>
 
-      <div className="icons" data-aos="fade-up">
+      <div className="icons">
         <a href={myLinkedIn} target="_blank" rel="noreferrer">
           <i className="bi bi-linkedin"></i>
         </a>
@@ -37,7 +35,7 @@ function Home() {
         </a>
       </div>
     </section>
-  );
+  )
 }
 
-export default Home;
+export default Home

@@ -1,11 +1,11 @@
-import bubblesBG from '../asserts/images/projects/bubbles.jpg';
-import flappyBG from '../asserts/images/projects/flappy.png';
-import pianonaBG from '../asserts/images/projects/pianona.png';
-import weatherBG from '../asserts/images/projects/weather.png';
-import calculatorBG from '../asserts/images/projects/calculator.png';
-import shiningStarsBG from '../asserts/images/projects/shining-stars.png';
-import mofceLabBG from '../asserts/images/projects/mofce.jpeg';
-import myBoutiqueBG from '../asserts/images/projects/my-boutique-2.jpeg';
+import bubblesBG from '../asserts/images/projects/bubbles.jpg'
+import flappyBG from '../asserts/images/projects/flappy.png'
+import pianonaBG from '../asserts/images/projects/pianona.png'
+import weatherBG from '../asserts/images/projects/weather.png'
+import calculatorBG from '../asserts/images/projects/calculator.png'
+import shiningStarsBG from '../asserts/images/projects/shining-stars.png'
+import mofceLabBG from '../asserts/images/projects/mofce.jpeg'
+import myBoutiqueBG from '../asserts/images/projects/my-boutique-2.jpeg'
 
 const PROJECTS_DATA = [
   {
@@ -49,6 +49,6 @@ const PROJECTS_DATA = [
     code: 'https://github.com/adarSonmez/vanilla-js-caculator',
     visit: 'https://adarsonmez.github.io/vanilla-js-caculator/',
   },
-];
+]
 
-export default PROJECTS_DATA;
+export default PROJECTS_DATA

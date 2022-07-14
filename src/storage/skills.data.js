@@ -1,21 +1,21 @@
-import htmlLogo from '../asserts/images/logos/html-logo.png';
-import cssLogo from '../asserts/images/logos/css-logo.png';
-import jsLogo from '../asserts/images/logos/js-logo.png';
-import bootstrapLogo from '../asserts/images/logos/bootstrap-logo.png';
-import gitLogo from '../asserts/images/logos/git-logo.png';
-import javaLogo from '../asserts/images/logos/java-logo.png';
-import mongoDBLogo from '../asserts/images/logos/mongodb-logo.png';
-import nodeJSLogo from '../asserts/images/logos/nodejs-logo.png';
-import postmanLogo from '../asserts/images/logos/postman-logo.png';
-import reactLogo from '../asserts/images/logos/react-logo.png';
-import sassLogo from '../asserts/images/logos/sass-logo.png';
-import mySqlLogo from '../asserts/images/logos/mysql.jpg';
-import reduxLogo from '../asserts/images/logos/redux-logo.png';
-import mavenLogo from '../asserts/images/logos/maven.png';
-import firebaseLogo from '../asserts/images/logos/firebase.png';
-import graphQLLogo from '../asserts/images/logos/graphql.png';
-import pwaLogo from '../asserts/images/logos/pwa.png';
-import { getMonth } from '../utils/getMonth';
+import htmlLogo from '../asserts/images/logos/html-logo.png'
+import cssLogo from '../asserts/images/logos/css-logo.png'
+import jsLogo from '../asserts/images/logos/js-logo.png'
+import bootstrapLogo from '../asserts/images/logos/bootstrap-logo.png'
+import gitLogo from '../asserts/images/logos/git-logo.png'
+import javaLogo from '../asserts/images/logos/java-logo.png'
+import mongoDBLogo from '../asserts/images/logos/mongodb-logo.png'
+import nodeJSLogo from '../asserts/images/logos/nodejs-logo.png'
+import postmanLogo from '../asserts/images/logos/postman-logo.png'
+import reactLogo from '../asserts/images/logos/react-logo.png'
+import sassLogo from '../asserts/images/logos/sass-logo.png'
+import mySqlLogo from '../asserts/images/logos/mysql.jpg'
+import reduxLogo from '../asserts/images/logos/redux-logo.png'
+import mavenLogo from '../asserts/images/logos/maven.png'
+import firebaseLogo from '../asserts/images/logos/firebase.png'
+import graphQLLogo from '../asserts/images/logos/graphql.png'
+import pwaLogo from '../asserts/images/logos/pwa.png'
+import { getMonth } from '../utils/getMonth'
 
 export const MAIN_SKILLS = [
   {
@@ -91,7 +91,7 @@ export const MAIN_SKILLS = [
     inheritance, and polymorphism.`,
     styles: {},
   },
-];
+]
 
 export const OTHER_SHILLS = [
   {
@@ -134,4 +134,4 @@ export const OTHER_SHILLS = [
     logo: mavenLogo,
     styles: { padding: '.8vh' },
   },
-];
+]
