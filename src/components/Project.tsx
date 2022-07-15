@@ -1,4 +1,6 @@
-function Project(props) {
+import { IProjectData } from '../storage/projects.data'
+
+function Project(props: IProjectData) {
   return (
     <div className="project" style={{ backgroundImage: `url(${props.bg})` }}>
       <div className="project-info">

@@ -1,4 +1,6 @@
+import { MouseEvent } from "react"
 import Header from "./Header"
+import ParticlesBG from "./particles/ParticlesBG"
 
 function Home() {
   const myGithub = 'https://github.com/adarSonmez'
@@ -6,15 +8,18 @@ function Home() {
   const myLinkedIn = 'https://www.linkedin.com/in/adar-sonmez-0011110000110011/'
   const myEmail = 'adarsonmez@outlook.com'
 
-  const whoAreYou = (e) => {
-    e.target.innerText = '2A15J78'
-    e.target.classList.remove('fade')
-    e.target.classList.add('secret')
+  const whoAreYou = (e: MouseEvent) => {
+    const h2 = e.target as HTMLHeadingElement
+
+    h2.innerText = '2A15J78'
+    h2.classList.remove('fade')
+    h2.classList.add('secret')
   }
 
   return (
     <section className="home">
       <Header />
+      <ParticlesBG/>
       <h2 className="iam fade" onClick={(e) => whoAreYou(e)}>
         Hi, I'am Adar.
       </h2>

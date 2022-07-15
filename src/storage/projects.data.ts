@@ -7,7 +7,15 @@ import shiningStarsBG from '../asserts/images/projects/shining-stars.png'
 import mofceLabBG from '../asserts/images/projects/mofce.jpeg'
 import myBoutiqueBG from '../asserts/images/projects/my-boutique-2.jpeg'
 
-const PROJECTS_DATA = [
+export interface IProjectData {
+  name: string
+  des: string
+  bg: any
+  code?: string
+  visit?: string
+}
+
+export const PROJECTS_DATA = [
   {
     name: 'My Boutique',
     des: 'E-commerce store, coded with ReactJS, Redux, Firebase, Stripe, GraphQL, PWA.',
@@ -50,5 +58,3 @@ const PROJECTS_DATA = [
     visit: 'https://adarsonmez.github.io/vanilla-js-caculator/',
   },
 ]
-
-export default PROJECTS_DATA

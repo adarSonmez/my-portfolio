@@ -17,6 +17,19 @@ import graphQLLogo from '../asserts/images/logos/graphql.png'
 import pwaLogo from '../asserts/images/logos/pwa.png'
 import { getMonth } from '../utils/getMonth'
 
+export interface IMainSkills {
+  name: string
+  logo: any
+  details: string
+  styles: object
+}
+
+export interface IOtherSkills {
+  name: string
+  logo: any
+  styles: object
+}
+
 export const MAIN_SKILLS = [
   {
     name: 'HTML',
