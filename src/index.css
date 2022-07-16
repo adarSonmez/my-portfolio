@@ -13,6 +13,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 html {
@@ -30,6 +31,7 @@ header {
   padding: 6vh 7vw;
   letter-spacing: 0.7px;
   transition: all 0.6s ease;
+  user-select: none;
   background-color: var(--transparent-bg);
 }
 
@@ -81,17 +83,19 @@ nav a:hover {
   letter-spacing: 0.7px;
 }
 
+.home .greet {
+  user-select: none;
+  cursor: grab;
+  width: 400px;
+  margin: auto;
+}
+
 .iam {
   color: rgb(39, 39, 39);
   margin: 31vh auto 2vh;
   text-align: center;
   font-size: 1.45em;
-  cursor: pointer;
   transition: all 0.5s;
-}
-
-.fade:hover {
-  color: white;
 }
 
 .secret {

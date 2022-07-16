@@ -1,15 +1,7 @@
-import { MAIN_SKILLS, OTHER_SHILLS } from '../storage/skills.data'
+import { MAIN_SKILLS, OTHER_SHILLS } from '../data/skills.data'
+import Skill from './Skill'
 
 function Skills() {
-  const skills = MAIN_SKILLS.map((skill) => {
-    return (
-      <div key={skill.name} className="skill java-skill">
-        <img src={skill.logo} alt={skill.name} style={skill.styles} />
-        <p>{skill.details}</p>
-      </div>
-    )
-  })
-
   const others = OTHER_SHILLS.map((skill) => {
     return (
       <img
@@ -24,7 +16,10 @@ function Skills() {
   return (
     <section className="skills" id="skills">
       <h2>My Skills</h2>
-      {skills}
+      {MAIN_SKILLS.map((skill) => (
+        <Skill skill={skill}       key={skill.name}
+        />
+      ))}
       <div className="other-tools">
         <h3 className="other-tools-header">
           Some of the other programming tools I'm comfortable with

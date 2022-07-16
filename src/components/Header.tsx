@@ -4,7 +4,6 @@ function Header() {
   const toggleNavBar = (e: MouseEvent) => {
     const element = e.target as HTMLDivElement
     const nav = element.parentNode?.parentNode! as HTMLElement
-    console.log(nav.className)
     if (nav.className === '') nav.className += ' responsive'
     else nav.className = ''
   }

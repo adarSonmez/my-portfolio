@@ -1,13 +1,25 @@
 import itsMe from '../asserts/images/adarsonmez.jpg'
 
+import { motion } from 'framer-motion'
+
 function About() {
   return (
     <section className="about" id="about">
       <h2>About Me</h2>
-      <div className="its-me">
-        <img src={itsMe} alt="Adar Sönmez" />
-      </div>
-      <div className="about-content">
+      <motion.div
+        className="its-me"
+        initial={{ x: "-200px", opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
+      >
+        <motion.img src={itsMe} alt="Adar Sönmez" />
+      </motion.div>
+      <motion.div
+        className="about-content"
+        initial={{ x: 200, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
+      >
         <p>
           Adar Sönmez was born in 2000 in the World. His job is to turn complex
           problems into a simple and beautiful designs. He loves programming,
@@ -62,7 +74,7 @@ function About() {
           Databases. He has zero years of experience as a web developer in any
           company.
         </p>
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -1,5 +1,5 @@
 import Project from './Project'
-import { PROJECTS_DATA } from '../storage/projects.data'
+import { PROJECTS_DATA } from '../data/projects.data'
 
 function Projects() {
   return (

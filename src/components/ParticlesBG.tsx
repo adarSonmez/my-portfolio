@@ -1,6 +1,6 @@
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import { PARTICLES_CONFIG } from './config'
+import { PARTICLES_CONFIG } from '../data/particles.config.data'
 
 import type { ISourceOptions } from 'tsparticles-engine'
 import type { Engine } from 'tsparticles-engine'

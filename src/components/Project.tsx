@@ -1,4 +1,4 @@
-import { IProjectData } from '../storage/projects.data'
+import { IProjectData } from '../data/projects.data'
 
 function Project(props: IProjectData) {
   return (

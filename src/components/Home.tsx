@@ -1,6 +1,6 @@
-import { MouseEvent } from "react"
-import Header from "./Header"
-import ParticlesBG from "./particles/ParticlesBG"
+import Header from './Header'
+import ParticlesBG from './ParticlesBG'
+import { motion } from 'framer-motion'
 
 function Home() {
   const myGithub = 'https://github.com/adarSonmez'
@@ -8,22 +8,24 @@ function Home() {
   const myLinkedIn = 'https://www.linkedin.com/in/adar-sonmez-0011110000110011/'
   const myEmail = 'adarsonmez@outlook.com'
 
-  const whoAreYou = (e: MouseEvent) => {
-    const h2 = e.target as HTMLHeadingElement
-
-    h2.innerText = '2A15J78'
-    h2.classList.remove('fade')
-    h2.classList.add('secret')
-  }
-
   return (
     <section className="home">
       <Header />
-      <ParticlesBG/>
-      <h2 className="iam fade" onClick={(e) => whoAreYou(e)}>
-        Hi, I'am Adar.
-      </h2>
-      <h2 className="its-great">It's great to see you.❤️</h2>
+      <ParticlesBG />
+      <motion.div
+        className="greet"
+        drag
+        dragConstraints={{
+          left: -0,
+          right: 0,
+          top: -0,
+          bottom: 0,
+        }}
+        dragElastic={0.5}
+      >
+        <h2 className="iam">Hi, I'am Adar.</h2>
+        <h2 className="its-great">It's great to see you.❤️</h2>
+      </motion.div>
 
       <div className="icons">
         <a href={myLinkedIn} target="_blank" rel="noreferrer">
