@@ -44,5 +44,20 @@ export default {
         required: true,
       },
     },
+    {
+      name: 'finishedDate',
+      title: 'Finished Date',
+      type: 'date',
+    },
+    {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+        },
+      ],
+    },
   ],
 }

@@ -21,9 +21,14 @@ export default {
       },
     },
     {
-      name: 'degree',
-      title: 'Degree',
+      name: 'percent',
+      title: 'Percent',
       type: 'number',
+    },
+    {
+      name: 'color',
+      title: 'Color',
+      type: 'string',
     },
     {
       name: 'image',
@@ -31,6 +36,25 @@ export default {
       type: 'image',
       options: {
         hotspot: true,
+      },
+    },
+    {
+      name: 'startDate',
+      title: 'Start Date',
+      type: 'date',
+    },
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Front-End', value: 'frontend' },
+          { title: 'Back-End', value: 'backend' },
+          { title: 'Database', value: 'database' },
+          { title: 'Devops', value: 'devops' },
+          { title: 'Other', value: 'other' },
+        ],
       },
     },
   ],

@@ -1,0 +1,54 @@
+.skills h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.skill-bar {
+  width: 90%;
+  height: 40px;
+  position: relative;
+  background: rgba(59, 59, 59, 0.3);
+  margin: 20px auto;
+  border-radius: 10px;
+  opacity: 0.9;
+  color: #00c1cf;
+}
+
+.skill-color {
+  width: 100%;
+  animation: Animate-HTML 4s;
+  height: 40px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/*
+.skill-name {
+  z-index: 1;
+  float: left;
+  margin-top: 8px;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px;
+}*/
+
+.skill-percent {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 13px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+  font-size: 18px;
+}
+
+.skill-img {
+  height: 40px;
+  width: 45px;
+  padding-right: 5px;
+  display: inline;
+  background: rgb(255, 255, 255);
+}
