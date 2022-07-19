@@ -13,6 +13,17 @@ export default {
       },
     },
     {
+      name: 'published',
+      title: 'Published',
+      type: 'boolean',
+      options: {
+        list: [
+          { title: 'Yes', value: true },
+          { title: 'No', value: false },
+        ],
+      },
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'text',

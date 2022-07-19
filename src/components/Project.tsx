@@ -1,22 +1,34 @@
-import { IProjectData } from '../data/projects.data'
+import { motion } from 'framer-motion'
+import { getImageUrl } from '../client'
+import { IProjectData } from './Projects'
 
-function Project(props: IProjectData) {
+function Project({ project }: { project: IProjectData }) {
+  const { title, description, image, url, repo } = project
+
   return (
-    <div className="project" style={{ backgroundImage: `url(${props.bg})` }}>
+    <motion.div
+      className="project"
+      style={{ backgroundImage: `url(${getImageUrl(image)})` }}
+      initial={{ scale: .1, opacity: 0 }}
+      transition={{ duration: 0.1, ease: 'linear' }}
+      whileInView={{ scale: 1, opacity: 1 }}
+    >
       <div className="project-info">
         <i className="bi bi-arrow-bar-up"></i>
-        <h3 className="project-name">{props.name}</h3>
-        <p className="project-description">{props.des}</p>
-        <a href={props.visit} target="_blank" rel="noreferrer">
-          <button className="visit-website">Visit Website</button>
-        </a>
-        {props.code ? (
-          <a href={props.code} target="_blank" rel="noreferrer">
+        <h3 className="project-name">{title}</h3>
+        <p className="project-description">{description}</p>
+        {url && (
+          <a href={url} target="_blank" rel="noreferrer">
+            <button className="visit-website">Visit Website</button>
+          </a>
+        )}
+        {repo && (
+          <a href={repo} target="_blank" rel="noreferrer">
             <button className="open-repo">Open Repository </button>
           </a>
-        ) : null}
+        )}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

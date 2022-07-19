@@ -8,16 +8,16 @@ function About() {
       <h2>About Me</h2>
       <motion.div
         className="its-me"
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.2 }}
+        initial={{ x: '-300px', opacity: 0 }}
+        transition={{ duration: 1 }}
         whileInView={{ x: 0, opacity: 1 }}
       >
         <motion.img src={itsMe} alt="Adar Sönmez" />
       </motion.div>
       <motion.div
         className="about-content"
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.2 }}
+        initial={{ x: '300px', opacity: 0 }}
+        transition={{ duration: 1 }}
         whileInView={{ x: 0, opacity: 1 }}
       >
         <p>

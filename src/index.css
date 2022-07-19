@@ -198,6 +198,51 @@ nav a:hover {
   margin: 7vh auto 4vh;
 }
 
+/* Skills section */
+.skills h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.skill-bar {
+  width: 90%;
+  height: 40px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.13);
+  margin: 20px auto;
+  border-radius: 10px;
+  color: #00c1cf;
+}
+
+.skill-color {
+  width: 100%;
+  animation: Animate-HTML 4s;
+  height: 40px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.skill-percent {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 13px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+  font-size: 18px;
+}
+
+.skill-img {
+  height: 40px;
+  width: 45px;
+  padding-right: 5px;
+  display: inline;
+  background: rgb(255, 255, 255);
+}
+
+
 /* Projects Section */
 .projects {
   display: grid;

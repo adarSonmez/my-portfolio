@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { client } from '../client'
 import Skill from './Skill'
-import './Skills.css'
 
 export interface ISkill {
   title: string

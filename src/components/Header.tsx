@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header>
-      <div className="left-header">My Portfolio</div>
+      <div className="left-header">Adar Sönmez</div>
       <nav>
         <div className="mobile-nav" onClick={(e) => toggleNavBar(e)}>
           <i className="bi bi-list"></i>
