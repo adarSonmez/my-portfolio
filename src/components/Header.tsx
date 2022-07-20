@@ -19,6 +19,13 @@ function Header() {
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a
+            target={'_blank'}
+            rel={'noreferrer'}
+            href="https://1drv.ms/b/s!AiFbFkMJ-362i13ziAWYDO9kf3KL"
+          >
+            CV
+          </a>
         </div>
       </nav>
     </header>
