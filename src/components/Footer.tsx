@@ -11,16 +11,31 @@ function Footer() {
         contact me through social sites listed below.
       </p>
       <div className="icons">
-        <a href={myLinkedIn} target="_blank" rel="noreferrer">
+        <a
+          href={myLinkedIn}
+          target="_blank"
+          rel="noreferrer"
+          title="LinkedIn"
+        >
           <i className="bi bi-linkedin"></i>
         </a>
-        <a href={myGithub} target="_blank" rel="noreferrer">
+        <a href={myGithub} target="_blank" rel="noreferrer" title="GitHub">
           <i className="bi bi-github"></i>
         </a>
-        <a href={myTwitter} target="_blank" rel="noreferrer">
+        <a
+          href={myTwitter}
+          target="_blank"
+          rel="noreferrer"
+          title="Twitter"
+        >
           <i className="bi bi-twitter"></i>
         </a>
-        <a href={'mailto:' + myEmail} target="_blank" rel="noreferrer">
+        <a
+          href={'mailto:' + myEmail}
+          target="_blank"
+          rel="noreferrer"
+          title="Mail me!"
+        >
           <i className="bi bi-envelope"></i>
         </a>
       </div>
@@ -30,6 +45,7 @@ function Footer() {
           href="https://www.linkedin.com/in/adar-sonmez-0011110000110011"
           target="_blank"
           rel="noreferrer"
+          title="LinkedIn"
         >
           Adar SÖNMEZ.
         </a>{' '}

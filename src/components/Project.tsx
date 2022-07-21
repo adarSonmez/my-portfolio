@@ -9,7 +9,7 @@ function Project({ project }: { project: IProjectData }) {
     <motion.div
       className="project"
       style={{ backgroundImage: `url(${getImageUrl(image)})` }}
-      initial={{ scale: .1, opacity: 0 }}
+      initial={{ scale: 0.1, opacity: 0 }}
       transition={{ duration: 0.1, ease: 'linear' }}
       whileInView={{ scale: 1, opacity: 1 }}
     >
@@ -18,12 +18,12 @@ function Project({ project }: { project: IProjectData }) {
         <h3 className="project-name">{title}</h3>
         <p className="project-description">{description}</p>
         {url && (
-          <a href={url} target="_blank" rel="noreferrer">
+          <a href={url} target="_blank" rel="noreferrer" title={url}>
             <button className="visit-website">Visit Website</button>
           </a>
         )}
         {repo && (
-          <a href={repo} target="_blank" rel="noreferrer">
+          <a href={repo} target="_blank" rel="noreferrer" title={repo}>
             <button className="open-repo">Open Repository </button>
           </a>
         )}

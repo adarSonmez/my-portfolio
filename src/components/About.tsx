@@ -29,6 +29,7 @@ function About() {
             target="_blank"
             rel="noreferrer"
             style={{ color: '#00BF16' }}
+            title="wikipedia.org"
           >
             {' '}
             Wikipedia
@@ -39,6 +40,7 @@ function About() {
             target="_blank"
             rel="noreferrer"
             style={{ color: '#FF8800' }}
+            title="spotify.com"
           >
             {' '}
             Led Zeppelin.
@@ -51,6 +53,7 @@ function About() {
             target="_blank"
             rel="noreferrer"
             style={{ color: '#FF0F13' }}
+            title="eskisehir.edu.tr"
           >
             {' '}
             Eskişehir Technical University.{' '}
@@ -66,6 +69,7 @@ function About() {
             target="_blank"
             rel="noreferrer"
             style={{ color: '#00B2D0' }}
+            title="reactjs.org"
           >
             {' '}
             ReactJS

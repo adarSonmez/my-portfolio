@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header>
-      <div className="left-header">Adar Sönmez</div>
+      <h1 className="left-header">Adar Sönmez</h1>
       <nav>
         <div className="mobile-nav" onClick={(e) => toggleNavBar(e)}>
           <i className="bi bi-list"></i>
@@ -23,6 +23,7 @@ function Header() {
             target={'_blank'}
             rel={'noreferrer'}
             href="https://1drv.ms/b/s!AiFbFkMJ-362i13ziAWYDO9kf3KL"
+            title="Open resume in new tab"
           >
             CV
           </a>

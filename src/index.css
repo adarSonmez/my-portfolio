@@ -94,17 +94,11 @@ nav a:hover {
 
 .iam {
   color: rgb(39, 39, 39);
-  margin: 31vh auto 2vh;
+  margin: 29vh auto 2vh;
   text-align: center;
   font-size: 1.45em;
   transition: all 0.5s;
-}
-
-.secret {
-  color: rgb(0, 90, 102);
-  cursor: default;
-  transition: all 1s;
-  user-select: none;
+  font-weight: bold;
 }
 
 .its-great {
@@ -115,6 +109,7 @@ nav a:hover {
   white-space: nowrap;
   overflow: hidden;
   font-size: 1.45em;
+  font-weight: bold;
 }
 
 /* Icons */
