@@ -12,32 +12,27 @@ function Home() {
     <section className="home">
       <Header />
       <ParticlesBG />
-      <motion.div
-        className="greet"
-        drag
-        dragConstraints={{
-          left: -0,
-          right: 0,
-          top: -0,
-          bottom: 0,
-        }}
-        dragElastic={0.5}
-      >
+      <div className="greet">
         <p className="iam">Hi, I'am Adar.</p>
         <p className="its-great">It's great to see you.❤️</p>
-      </motion.div>
+      </div>
 
       <div className="icons">
-        <a href={myLinkedIn} target="_blank" rel="noreferrer" title='LinkedIn'>
+        <a href={myLinkedIn} target="_blank" rel="noreferrer" title="LinkedIn">
           <i className="bi bi-linkedin"></i>
         </a>
-        <a href={myGithub} target="_blank" rel="noreferrer" title='GitHub'>
+        <a href={myGithub} target="_blank" rel="noreferrer" title="GitHub">
           <i className="bi bi-github"></i>
         </a>
-        <a href={myTwitter} target="_blank" rel="noreferrer" title='Twitter'>
+        <a href={myTwitter} target="_blank" rel="noreferrer" title="Twitter">
           <i className="bi bi-twitter"></i>
         </a>
-        <a href={'mailto:' + myEmail} target="_blank" rel="noreferrer" title='Mail me!'>
+        <a
+          href={'mailto:' + myEmail}
+          target="_blank"
+          rel="noreferrer"
+          title="Mail me!"
+        >
           <i className="bi bi-envelope"></i>
         </a>
       </div>
