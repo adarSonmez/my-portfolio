@@ -1,6 +1,5 @@
 import Header from './Header'
 import ParticlesBG from './ParticlesBG'
-import { motion } from 'framer-motion'
 
 function Home() {
   const myGithub = 'https://github.com/adarSonmez'
