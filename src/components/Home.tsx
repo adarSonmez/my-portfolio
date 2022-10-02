@@ -35,6 +35,9 @@ function Home() {
           <i className="bi bi-envelope"></i>
         </a>
       </div>
+      <div className="swipe-icon-container">
+        <i className="bi bi-arrow-down"></i>
+      </div>
     </section>
   )
 }

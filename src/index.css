@@ -120,6 +120,10 @@ nav a:hover {
   justify-content: center;
 }
 
+.swipe-icon-container {
+  display: none;
+}
+
 .icons a {
   margin: 34vh 3.1% 0;
   font-size: 33px;
@@ -492,6 +496,17 @@ footer .icons a {
 
   .nav-menu-container {
     margin-top: 5vh;
+  }
+
+  .icons {
+    margin-top: -30px;
+  }
+  
+  .swipe-icon-container {
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
   }
 }
 
