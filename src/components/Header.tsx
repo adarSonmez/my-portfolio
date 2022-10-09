@@ -22,7 +22,7 @@ function Header() {
           <a
             target={'_blank'}
             rel={'noreferrer'}
-            href="https://1drv.ms/b/s!AiFbFkMJ-362i13ziAWYDO9kf3KL"
+            href="https://1drv.ms/b/s!AiFbFkMJ-362jFYA_E6TVK_6hlMd?e=0h569q"
             title="Open resume in new tab"
           >
             CV
